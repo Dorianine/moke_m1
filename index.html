@@ -365,7 +365,7 @@
  window.addEventListener('error', () => {
   if (!loader.hidden) showError('页面程序读取失败，请重新打开完整的离线文件或重新载入网页。');
  }, true);
- resetTimer();
+ // Model progress starts the watchdog after the embedded script arrives.
 })();
 </script>
 <script type="module">
